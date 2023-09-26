@@ -4,9 +4,20 @@
     margin: 0px;
     padding: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+    font-size: 1em;
+}
+
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte1);
 }
 header {
     background-color: black;
@@ -18,6 +29,9 @@ header > h1 {
     padding-top: 50px;
     /*Colocar as letras maiusculas  */
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    /*colocar as palavras para adptar a tela  */
+    font-size: 10vw;
 }
 header > p {
    /*para distanciar da margin  de baixo*/ 
@@ -41,6 +55,8 @@ section {
     line-height: 2em; 
     /*distanciar da margim esquerda*/ 
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 section.normal {
     background-color: white;
@@ -49,8 +65,9 @@ section.normal {
 /*criado para não misturar as letras com a imagem*/ 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.445);
-    /*para diminuir a largura*/ 
-    width: 400px;
+    /*para o bloco adaptar a largura do texto */ 
+    display: inline-block;
+    padding: 5px;
 }
 section.imagem {
     background-color: rgb(43, 42, 42);
