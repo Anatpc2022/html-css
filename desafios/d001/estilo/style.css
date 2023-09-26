@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
@@ -14,17 +15,20 @@
     font-size: 1em;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
     background-color: darkgrey;
     font-family: var(--fonte1);
 }
+
 header {
     background-color: black;
     color: white;
     text-align: center;
 }
-header > h1 {
+
+header>h1 {
     /*para distanciar da margin de cima  */
     padding-top: 50px;
     /*Colocar as letras maiusculas  */
@@ -33,47 +37,79 @@ header > h1 {
     /*colocar as palavras para adptar a tela  */
     font-size: 10vw;
 }
-header > p {
-   /*para distanciar da margin  de baixo*/ 
-   padding-bottom: 50px;
+
+header>p {
+    /*para distanciar da margin  de baixo*/
+    padding-bottom: 50px;
 }
-header a, footer a {
+
+header a,
+footer a {
     color: white;
-    /*tirar sublinhado*/ 
+    /*tirar sublinhado*/
     text-decoration: none;
     /*colocar em negrito*/
-    font-weight: bolder; 
+    font-weight: bolder;
 }
-header a:hover, footer a:hover {
-    text-decoration: underline; 
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
 }
+
 section {
-    /*colocar distancia "top" de cima "bottom" por baixo da escrita*/ 
+    /*colocar distancia "top" de cima "bottom" por baixo da escrita*/
     padding-top: 10vh;
     padding-bottom: 10vh;
     /*dar espaçamento entre as linhas*/
-    line-height: 2em; 
-    /*distanciar da margim esquerda*/ 
+    line-height: 2em;
+    /*distanciar da margim esquerda*/
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
+
 section.normal {
     background-color: white;
     color: black;
 }
-/*criado para não misturar as letras com a imagem*/ 
-section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.445);
-    /*para o bloco adaptar a largura do texto */ 
-    display: inline-block;
-    padding: 5px;
+
+section>p {
+    /*"em" por cento da largura do bloco */
+    padding-bottom: 2em;
 }
+
 section.imagem {
     background-color: rgb(43, 42, 42);
     color: white;
+    /*colocar sombra para separar os blocos */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
+    /*para a imagem adaptar a largura do bloco */
+    background-size: cover;
+    /*colocar a imagem fixa */
+    background-attachment: fixed;
 }
 
+/*criado para não misturar as letras com a imagem*/
+section.imagem>p {
+    background-color: rgba(0, 0, 0, 0.514);
+    /*para o bloco adaptar a largura do texto */
+    display: inline-block;
+    padding: 5px;
+    /*colocar sombra no texto */
+    text-shadow: 1.5px 1.5px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    /*para a imagem ficar centralizada da direita e ao centro */
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
 
 footer {
     padding: 10px;
