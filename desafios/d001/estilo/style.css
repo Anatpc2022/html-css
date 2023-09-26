@@ -1,1 +1,66 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    /*para distanciar da margin de cima  */
+    padding-top: 50px;
+    /*Colocar as letras maiusculas  */
+    font-variant: small-caps;
+}
+header > p {
+   /*para distanciar da margin  de baixo*/ 
+   padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    /*tirar sublinhado*/ 
+    text-decoration: none;
+    /*colocar em negrito*/
+    font-weight: bolder; 
+}
+header a:hover, footer a:hover {
+    text-decoration: underline; 
+}
+section {
+    /*colocar distancia "top" de cima "bottom" por baixo da escrita*/ 
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /*dar espaçamento entre as linhas*/
+    line-height: 2em; 
+    /*distanciar da margim esquerda*/ 
+    padding-left: 30px;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+/*criado para não misturar as letras com a imagem*/ 
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.445);
+    /*para diminuir a largura*/ 
+    width: 400px;
+}
+section.imagem {
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+
+
+footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
